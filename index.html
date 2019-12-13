@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fast reader</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="navigate backward">⬅</div>
+	<div class="navigate forward">➡</div>
+	
+	<div class="page first displayed">
+		<h1>Your text:</h1>
+		<textarea id="source"></textarea>
+		<h1>
+			<span id="speed-value">240</span>
+			 words per minute:
+		</h1>
+		<input id="speed" name="speed-value" type="range" min="30" max="2000" value="240">
+	</div>
+
+	<div class="page second">
+		<div class="word-container">
+			<span id="word">Press ▶ to start</span>
+		</div>
+		
+		<div class="controls">
+			<button id="back">⏮ </button>
+			<button id="pause">⏸</button>
+			<button id="start">▶</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
